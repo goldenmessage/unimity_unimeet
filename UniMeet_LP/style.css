@@ -1,0 +1,670 @@
+/* ベースのリセット */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth; /* スムーズスクロールを有効化 */
+  }
+  
+  
+  /* HTML要素の基本スタイル */
+  body {
+    font-family: Arial, sans-serif; /* フォント設定 */
+    line-height: 1.6; /* テキストの行間 */
+    background-color: #ffffff; /* 背景色 */
+    color: #333; /* テキストカラー */
+    margin: 0; /* 外部余白リセット */
+    padding: 0; /* 内部余白リセット */
+  }
+  
+  /* ヘッダーのスタイル */
+  header {
+    display: flex; /* フレックスボックスで要素を横並び */
+    align-items: center; /* 要素を垂直方向に中央揃え */
+    justify-content: space-between; /* 左右の要素を分ける */
+    padding-left:20px;
+    padding-right:50px;
+    background-color: #ffffff; /* 背景色（必要に応じて変更） */
+  }
+  
+  .apply-button {
+    position: absolute; /* ボタンを画像上に配置 */
+    bottom: 120px; /* ボタンの位置を下から20pxに調整 */
+    left: 50%; /* 水平方向の中央に配置 */
+    transform: translateX(-50%); /* 中央揃えを補正 */
+    padding: 15px 30px; /* ボタンの内側余白 */
+    background-color: #D11C2C; /* ボタンの背景色 */
+    color: #fff; /* テキストの色 */
+    font-size: 1.2rem; /* フォントサイズ */
+    border: none; /* ボーダーを削除 */
+    border-radius: 5px; /* 角を丸く */
+    text-decoration: none; /* 下線を削除 */
+    cursor: pointer; /* カーソルをポインターに変更 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 軽いシャドウを追加 */
+    transition: background-color 0.3s ease; /* ホバー時のスムーズな変化 */
+  }
+  
+  .apply-button:hover {
+    background-color: #A91422; /* ホバー時の背景色 */
+  }
+  
+  header .nav-links {
+    display: flex; /* リンク群を横並びに配置 */
+    justify-content: flex-end; /* リンクを右寄せ */
+    gap: 30px; /* 各リンク間の間隔を調整 */
+  }
+  
+  header a {
+    text-decoration: none; /* 下線を削除 */
+    color: #333; /* テキストカラー */
+    font-size: 16px; 
+    font-weight: 600;/* フォントサイズ */
+  }
+  
+  header a:hover {
+    color: #D11C2C; /* ホバー時のリンク色 */
+    text-decoration: none; /* ホバー時の下線 */
+  }
+  
+  
+  
+
+  /*蒲谷作成　*/
+  .top_logo{
+    width:300px;
+    margin-top:10px;
+  }
+
+
+  .top_fv{
+    width:100%;
+    height:auto;
+  }
+
+  .top_fv_sp {
+    display:none;
+  }
+
+  .top_h1{
+    margin-top:100px;
+    margin-bottom: 10px;
+    font-size:24px;
+  }
+
+  .top-p{
+    font-weight: 600;
+  }
+  
+  .horizontal-line{
+    width:100%;
+    height:3px;
+    background-color:#D11C2C;
+    margin-top:20px;
+    margin-bottom: 20px;
+  }
+
+  .top-p{
+    font-size:20px;
+    margin-top:10px;
+    margin-bottom: 5px;
+    line-height: 2;
+  }
+
+  .top_h2 {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 40px;
+    font-weight: bold; /* フォントを強調 */
+    color: #2c3e50; /* モダンなダークブルー */
+}
+
+.bar {
+    background-color: #D11C2C;
+    width: 100px; /* 幅を少し狭く */
+    height: 5px; /* 高さを増加 */
+    margin: 10px auto; /* 上下に少し余白を追加 */
+    border-radius: 3px; /* 角を丸くして柔らかい印象に */
+}
+
+.unimity_aboutus {
+    display: flex; /* 要素を横並びに配置 */
+    align-items: center; /* 垂直方向を中央揃え */
+    gap: 70px; /* 画像とテキストの間隔を広げる */
+    padding: 40px 30px; /* 内側の余白を増やす */
+    margin: 30px auto; /* 上下の余白を均等に */
+    max-width: 1200px; /* 全体の横幅を制限 */
+}
+
+.unimity_image {
+    max-width: 40%; /* 画像のサイズを親要素に合わせて調整 */
+    height: auto; /* 縦横比を保持 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 画像にもボックスシャドウを適用 */
+}
+
+.unimity_aboutus_content {
+    flex: 1; /* テキスト部分を残りの空間に広げる */
+    text-align: left; /* テキストを左揃え */
+    padding: 10px 20px; /* テキスト部分の余白を追加 */
+}
+
+.unimity_aboutus_content h3 {
+    margin: 0 0 20px; /* 下に余白を追加 */
+    font-size: 2rem; /* フォントサイズ */
+    font-weight: bold; /* 見出しを強調 */
+    text-align: center;
+}
+
+.unimity_aboutus_content a {
+    display: block; /* ブロック要素として扱い、幅全体を使用 */
+    color: #2c3e50; /* テキストカラーを濃いグレーに */
+    font-size: 1.2rem; /* フォントサイズを調整 */
+    line-height: 1.8; /* 行間を少し狭める */
+    margin-top: 30px; /* 上部に余白を追加 */
+    text-decoration: none; /* 下線を削除 */
+}
+
+.menter_container{
+  margin-left:150px;
+  margin-right:150px;
+}
+
+/*蒲谷テスト*/
+/* 共通のスタイル */
+.media-text-section {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.media-text-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.media-text-content {
+  flex: 2;
+  text-align: left;
+}
+
+.media-text-title {
+  position: relative;
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.media-text-title::before {
+  content: "01";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  font-size: 14rem;
+  color: rgba(0, 0, 0, 0.055);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.media-text-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.media-text-image {
+  flex: 1;
+  text-align: center;
+}
+
+.media-text-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 左右反転用のスタイル */
+.reverse-layout .media-text-row {
+  flex-direction: row-reverse; /* 順序を逆にする */
+}
+
+.reverse-layout .media-text-title::before {
+  content: "02"; /* 背景文字を02に変更 */
+}
+
+/* 左右反転用のスタイル */
+.reverse-layout-03 .media-text-row {
+  flex-direction: row-reverse; /* 順序を逆にする */
+}
+
+.reverse-layout-03 .media-text-title::before {
+  content: "03"; /* 背景文字を03に変更 */
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  font-size: 14rem;
+  color: rgba(0, 0, 0, 0.055); /* 背景文字の薄い灰色 */
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* 背景文字を03にする特定のクラス */
+.layout-03 .media-text-title::before {
+  content: "03"; /* 背景文字を03に変更 */
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .media-text-row {
+    flex-direction: column;
+  }
+}
+
+
+/*蒲谷テストver2*/
+/* 全体のスタイル */
+.customer-voice-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: #007acc;
+  margin-bottom: 20px;
+}
+
+.section-description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+/* カードのレイアウト */
+.customer-voice-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.customer-card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 370px;
+  padding: 20px;
+  text-align: left;
+}
+
+.company-logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.customer-image {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.customer-comment {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.customer-info {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.employment-type {
+  font-size: 0.8rem;
+  color: #007acc;
+  text-align: center;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .customer-voice-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .customer-card {
+    width: 100%;
+  }
+}
+
+/*蒲谷テストver2末*/
+
+
+
+.top_container {
+  display: flex; /* 横並びに配置 */
+  justify-content: space-between; /* 子要素を等間隔で配置 */
+  align-items: center; /* 子要素を垂直方向に中央揃え */
+  gap: 20px; /* 子要素間の間隔を調整（任意） */
+  padding: 20px; /* 全体の余白を追加 */
+  max-width: 1200px; /* 最大幅を制限 */
+  margin: 0 auto; /* 中央揃え */
+}
+
+.column_1, .column_2, .column_3 {
+  flex: 1; /* 子要素を均等に拡大 */
+  text-align: center; /* テキストを中央揃え */
+  padding: 10px; /* 内側の余白を追加 */
+}
+
+.large-number {
+  font-size: 2.5rem; /* 数字を大きくする */
+  font-weight: bold; /* 強調 */
+  color: #D11C2C; /* 目立つ色 */
+}
+
+.small-symbol {
+  font-size: 1.5rem; /* 記号のフォントサイズ */
+  font-weight: normal; /* 強調しすぎない */
+  color: #333; /* 落ち着いた色 */
+}
+
+.column_p {
+  margin: 10px 0; /* 上下に余白を追加 */
+  font-size: 1.2rem; /* テキストサイズを調整 */
+  font-weight: bold; /* 強調 */
+  color: #333; /* テキストカラー */
+}
+
+.column_p_sub {
+  font-size: 1rem; /* サブテキストのサイズを調整 */
+  line-height: 1.6; /* 読みやすい行間を設定 */
+  color: #666; /* サブテキストを落ち着いた色に */
+}
+
+
+.large-number {
+    font-size: 100px; /* 数値部分のフォントサイズ */
+    font-weight: 600;
+    background: linear-gradient(90deg, #D11C2C, #4B4B4B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+  
+  .small-symbol {
+    font-size: 70px; /* 記号部分のフォントサイズ */
+    font-weight: 600;
+    background: linear-gradient(90deg, #D11C2C, #4B4B4B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+
+  .column_p{
+    font-size:24px;
+    font-weight: 600;
+    margin:3px;
+    margin-bottom: 5px;
+  }
+
+  .column_p_sub{
+    width:300px;
+  }
+
+  .reserve_box{
+    margin-top: 100px;
+    text-align: center;
+    background: linear-gradient(to right, #D11C2C, #4B4B4B);
+    color:white;
+    padding:50px;
+  }
+
+  .reserve_box h2 {
+    font-size:36px;
+}
+  
+  .reserve_box p {
+    font-size:24px;
+    margin-top:25px;
+    margin-bottom: 25px;
+}
+
+.reserve-buttom {
+    font-size:30px;
+    margin-top:25px;
+    color:#D11C2C;
+    padding:10px;
+    width:900px;
+    font-weight: 600;
+    background-color: white;
+    display: inline-block;
+    border-radius: 100px;
+}
+
+.service_container{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 150px;
+    padding-left:150px;
+    gap:20px;
+}
+
+.service_img_1{
+    width:550px;
+    height:auto;
+}
+   
+.service_1 p {
+    margin:10px;
+}
+
+.service_2 p {
+    margin:10px;
+}
+
+.service_img_2{
+    width: 550px;
+    height:auto;
+}
+
+.service_container h3 {
+    text-align: center;
+    margin:15px;
+}
+
+.service_1 h2 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.service_2 h2{
+    margin:10px;
+    margin-bottom: 50px;
+    font-size:30px;
+}
+
+.menter {
+    color:#D11C2C;
+    margin-bottom: 50px;
+}
+
+.service_img_5 {
+  display: block; /* 要素をブロックとして扱う */
+  width: 1000px; /* 幅を指定 */
+  height: auto; /* 縦横比を保持 */
+  margin: 75px auto; /* 上下に75px、左右をautoで中央揃え */
+}
+
+
+.service_img_5_sp{
+    display:none;
+}
+
+@media (max-width: 768px) {
+    /* スマートフォン向けのスタイル */
+
+main{
+    padding:30px;
+}
+
+.top_logo{
+  width:120px;
+  margin-bottom: 10px;
+}
+
+.nav-links{
+  display: none !important;;
+}
+
+.apply-button{
+  bottom: 200px;
+  font-size: 0.9rem;
+}
+
+.menter_container{
+  margin-right:10px;
+  margin-left:10px;
+}
+
+.unimity_aboutus_content h3{
+  font-size:1.6rem;
+}
+
+.unimity_aboutus{
+  display:block;
+  padding:0px;
+}
+
+.unimity_image {
+  max-width:100%;
+}
+
+.top_fv {
+    display: none;
+  }
+
+.top_fv_sp {
+    display: block;
+    width:100%;
+  }
+
+  .top_h1 {
+    margin-top:0px;
+  }
+
+  .top_h2 {
+    margin-top:50px;
+    font-size:24px;
+
+  }
+
+  .top_container {
+    display:block;
+    text-align: center;
+    
+  }
+  
+  .column_p_sub{
+    width:auto;
+  }
+  
+  .reserve-buttom{
+    width:auto;
+    font-size:20px;
+    padding:20px;
+  }
+  
+  .service_container{
+    display:block;
+    padding:0px;
+  }
+
+  .service_img_1{
+    width:100%;
+  }
+
+  .service_img_2 {
+    width:100%;
+  }
+
+  
+  .reverse-layout .media-text-row {
+    flex-direction: column; /* スマホ版では縦並びに変更 */
+  }
+
+  .media-text-row {
+    flex-direction: column; /* スマホでは縦並びに変更 */
+    text-align: center; /* 中央揃えにする */
+  }
+
+  .media-text-content {
+    margin-bottom: 20px; /* テキストと画像の間に余白を追加 */
+  }
+
+  .media-text-image img {
+    width: 100%; /* 画像を画面幅に合わせる */
+    height: auto;
+  }
+
+  .service_1 p{
+    padding-bottom: 40px;
+    padding:20px;
+  }
+
+  .reserve_box{
+    padding:20px;
+  }
+
+  .reserve_box p{
+    font-size:20px;
+  }
+  
+  .reserve_box h2{
+    font-size:24px;
+    margin-top:20px;
+  }
+
+  .service_2 p{
+    padding:20px;
+  }
+
+  .service_2 h2{
+    margin:10px 20px;
+    font-size:28px;
+  }
+
+  .service_img_5{
+    display:none;
+  }
+
+  .service_img_5_sp{
+    display:block;
+    width:100%;
+    padding:20px;
+  }
+
+
+  
+  }
